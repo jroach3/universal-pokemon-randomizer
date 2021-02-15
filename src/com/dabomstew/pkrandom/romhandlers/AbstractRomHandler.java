@@ -2778,7 +2778,7 @@ public abstract class AbstractRomHandler implements RomHandler {
             boolean forceChange) {
         checkPokemonRestrictions();
         List<Pokemon> pokemonPool = new ArrayList<Pokemon>(mainPokemonList);
-        int stageLimit = limitToThreeStages ? 3 : 10;
+        int stageLimit = limitToThreeStages ? 3 : 1000;
 
         // Cache old evolutions for data later
         Map<Pokemon, List<Evolution>> originalEvos = new HashMap<Pokemon, List<Evolution>>();
